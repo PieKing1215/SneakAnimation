@@ -1,11 +1,11 @@
 modLoader="javafml"
 loaderVersion="[31,)"
-#issueTrackerURL=""
+issueTrackerURL="https://github.com/PieKing1215/SneakAnimation/issues"
 [[mods]]
 modId="sneakanimation"
 version="0.1.0"
 displayName="SneakAnimation"
-#displayURL=""
+displayURL="https://github.com/PieKing1215/SneakAnimation"
 logoFile="logo.png"
 #credits=""
 authors="PieKing1215"
