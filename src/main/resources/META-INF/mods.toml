@@ -12,19 +12,19 @@ authors="PieKing1215"
 description='''
 Lets you tweak the sneak animation.'''
 
-[[dependencies.invmove]]
+[[dependencies.sneakanimation]]
     modId="forge"
     mandatory=true
     versionRange="[31,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.invmove]]
+[[dependencies.sneakanimation]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"
-[[dependencies.invmove]]
+[[dependencies.sneakanimation]]
     modId="cloth-config2"
     mandatory=true
     versionRange="[3.0,)"
