@@ -1,0 +1,11 @@
+{
+  "config.sneakanimation.title": "SneakAnimation Config",
+  "key.sneakanimation.category.general": "General",
+
+  "config.sneakanimation.enable": "Enable Mod",
+  "tooltip.config.sneakanimation.enable": "Enable the entire mod",
+  "config.sneakanimation.animationSpeed": "Animation Speed",
+  "tooltip.config.sneakanimation.animationSpeed": "Modifier for the sneak animation speed.\n100%% = Vanilla\n200%% = Near instantaneous\n>200%% = Bouncy",
+  "config.sneakanimation.disableAnimation": "Disable Animation",
+  "tooltip.config.sneakanimation.disableAnimation": "Disable the smooth sneak animation"
+}

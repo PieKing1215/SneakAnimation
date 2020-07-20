@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+#issueTrackerURL=""
+[[mods]]
+modId="sneakanimation"
+version="0.1.0"
+displayName="SneakAnimation"
+#displayURL=""
+logoFile="logo.png"
+#credits=""
+authors="PieKing1215"
+description='''
+Lets you tweak the sneak animation.'''
+
+[[dependencies.invmove]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.invmove]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.invmove]]
+    modId="cloth-config2"
+    mandatory=true
+    versionRange="[3.0,)"
+    ordering="NONE"
+    side="CLIENT"
