@@ -11,11 +11,21 @@ This mod is client-side, so it does not need to be installed on the server for i
 
 Requires [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config-forge) so the config screen works.
 
+## Speeds & Demo
+The config lets you set the speed anywhere from 10% to 250%<br>
+100% is vanilla, and anything above 200% makes the animation "bounce" a bit.<br>
+### 50% Speed:<br>
+![](demo/50_plain.gif)<br>
+### 100% Speed (Vanilla):<br>
+![](demo/vanilla_plain.gif)<br>
+### 150% Speed:<br>
+![](demo/150_plain.gif)<br>
+
 ## Usage
 
 Feel free to use in packs if you wish (though compatibility hasn't been tested thoroughly)
 
-Do not download this mod from anywhere other than the WaterDripSound GitHub page or the WaterDripSound Curseforge page.<br>
+Do not download this mod from anywhere other than the SneakAnimation GitHub page or the SneakAnimation Curseforge page.<br>
 This mod may not be reposted to any other third-party websites.<br>
 [#StopModReposts](https://stopmodreposts.org)
 
