@@ -5,6 +5,8 @@ Adds a modifier to the camera smoothing when sneaking.<br>
 The modifier can be changed in the in-game config.<br>
 There is also an option to disable the smoothing entirely.<br>
 
+This mod does not change anything about sneaking other than the camera animation.
+
 This mod is client-side, so it does not need to be installed on the server for it to work.
 
 ### [Releases](https://github.com/PieKing1215/SneakAnimation/releases)
