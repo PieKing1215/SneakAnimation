@@ -31,7 +31,11 @@ Do not download this mod from anywhere other than the SneakAnimation GitHub page
 This mod may not be reposted to any other third-party websites.<br>
 [#StopModReposts](https://stopmodreposts.org)
 
-Tested on Forge 31.2.31 with MC 1.15.2, on both singleplayer and multiplayer.
+Tested on 
+Forge 32.0.106 for MC 1.16.1,
+Forge 31.2.31 for MC 1.15.2, 
+Forge 28.2.23 for MC 1.14.4,
+on both singleplayer and multiplayer.
 
 Other mods shouldn't conflict unless they also change the sneak animation.
 
