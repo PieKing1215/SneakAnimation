@@ -1,13 +1,19 @@
 package me.pieking1215.sneakanimation;
 
-import me.shedaniel.forge.clothconfig2.api.ConfigBuilder;
-import me.shedaniel.forge.clothconfig2.api.ConfigCategory;
-import me.shedaniel.forge.clothconfig2.api.ConfigEntryBuilder;
+import me.shedaniel.clothconfig2.forge.api.ConfigBuilder;
+import me.shedaniel.clothconfig2.forge.api.ConfigCategory;
+import me.shedaniel.clothconfig2.forge.api.ConfigEntryBuilder;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.ExtensionPoint;
 import net.minecraftforge.fml.ModLoadingContext;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class Config {
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
@@ -41,13 +47,13 @@ public class Config {
 
     public static void registerClothConfig() {
         ModLoadingContext.get().registerExtensionPoint(ExtensionPoint.CONFIGGUIFACTORY, () -> (client, parent) -> {
-            ConfigBuilder builder = ConfigBuilder.create().setParentScreen(parent).setTitle("config.sneakanimation.title");
+            ConfigBuilder builder = ConfigBuilder.create().setParentScreen(parent).setTitle(new TranslationTextComponent("config.sneakanimation.title"));
             builder.setDefaultBackgroundTexture(new ResourceLocation("minecraft:textures/block/spruce_planks.png"));
             builder.transparentBackground();
 
             ConfigEntryBuilder eb = builder.getEntryBuilder();
-            ConfigCategory general = builder.getOrCreateCategory("key.sneakanimation.category.general");
-            general.addEntry(eb.startBooleanToggle("config.sneakanimation.enable", getBoolSafe(GENERAL.enabled, true)).setDefaultValue(true).setSaveConsumer(GENERAL.enabled::set).setTooltip(I18n.format("tooltip.config.sneakanimation.enable").split("\n")).build());
+            ConfigCategory general = builder.getOrCreateCategory(new TranslationTextComponent("key.sneakanimation.category.general"));
+            general.addEntry(eb.startBooleanToggle(new TranslationTextComponent("config.sneakanimation.enable"), getBoolSafe(GENERAL.enabled, true)).setDefaultValue(true).setSaveConsumer(GENERAL.enabled::set)/*.setTooltip(Arrays.asList(I18n.format("tooltip.config.sneakanimation.enable").split("\n")).stream().map(StringTextComponent::new).toArray(StringTextComponent[]::new))*/.build());
             //general.addEntry(eb.startDoubleField("config.sneakanimation.animationSpeed", getDoubleSafe(GENERAL.animationSpeed, 1.0)).setDefaultValue(1.0).setMin(0.1).setMax(2.5).setSaveConsumer(GENERAL.animationSpeed::set).setTooltip(I18n.format("tooltip.config.sneakanimation.animationSpeed").split("\n")).build());
 
             int nTicks = (int) ((General.ANIM_MAX - General.ANIM_MIN) / 0.1) + 1;
@@ -56,7 +62,7 @@ public class Config {
             int animV = (int) (((getDoubleSafe(GENERAL.animationSpeed, 1.0) - General.ANIM_MIN) / (General.ANIM_MAX - General.ANIM_MIN)) * nTicks);
             int animDef = (int) (((1.0 - General.ANIM_MIN) / (General.ANIM_MAX - General.ANIM_MIN)) * nTicks);
 
-            general.addEntry(eb.startIntSlider("config.sneakanimation.animationSpeed", animV, 0, nTicks).setDefaultValue(animDef).setSaveConsumer((i) -> {
+            general.addEntry(eb.startIntSlider(new TranslationTextComponent("config.sneakanimation.animationSpeed"), animV, 0, nTicks).setDefaultValue(animDef).setSaveConsumer((i) -> {
                 // map [0, nTicks] to [ANIM_MIN, ANIM_MAX]
                 double thru = i / (double)nTicks;
                 double v = General.ANIM_MIN + (thru * (General.ANIM_MAX - General.ANIM_MIN));
@@ -70,10 +76,11 @@ public class Config {
                 int percent = (int) (100 * v);
 
                 percent = (int) (Math.round(percent/10.0) * 10);
-                return percent + "%";
-            }).setTooltip(I18n.format("tooltip.config.sneakanimation.animationSpeed").split("\n")).build());
+                return new StringTextComponent(percent + "%");
 
-            general.addEntry(eb.startBooleanToggle("config.sneakanimation.disableAnimation", getBoolSafe(GENERAL.disableAnimation, false)).setDefaultValue(false).setSaveConsumer(GENERAL.disableAnimation::set).setTooltip(I18n.format("tooltip.config.sneakanimation.disableAnimation").split("\n")).build());
+            })/*.setTooltip(Arrays.asList(I18n.format("tooltip.config.sneakanimation.animationSpeed").split("\n")).stream().map(StringTextComponent::new).toArray(StringTextComponent[]::new))*/.build());
+
+            general.addEntry(eb.startBooleanToggle(new TranslationTextComponent("config.sneakanimation.disableAnimation"), getBoolSafe(GENERAL.disableAnimation, false)).setDefaultValue(false).setSaveConsumer(GENERAL.disableAnimation::set)/*.setTooltip(Arrays.asList(I18n.format("tooltip.config.sneakanimation.disableAnimation").split("\n")).stream().map(StringTextComponent::new).toArray(StringTextComponent[]::new))*/.build());
 
             return builder.setSavingRunnable(spec::save).build();
         });

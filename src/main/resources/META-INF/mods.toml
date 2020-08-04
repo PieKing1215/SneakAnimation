@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[32,)"
 issueTrackerURL="https://github.com/PieKing1215/SneakAnimation/issues"
 [[mods]]
 modId="sneakanimation"
@@ -15,18 +15,18 @@ Lets you tweak the sneak animation.'''
 [[dependencies.sneakanimation]]
     modId="forge"
     mandatory=true
-    versionRange="[31,)"
+    versionRange="[32,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.sneakanimation]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.16.1]"
     ordering="NONE"
     side="BOTH"
 [[dependencies.sneakanimation]]
-    modId="cloth-config2"
+    modId="cloth-config"
     mandatory=true
-    versionRange="[3.0,)"
+    versionRange="[4.0,)"
     ordering="NONE"
     side="CLIENT"
