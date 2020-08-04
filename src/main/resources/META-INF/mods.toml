@@ -3,7 +3,7 @@ loaderVersion="[32,)"
 issueTrackerURL="https://github.com/PieKing1215/SneakAnimation/issues"
 [[mods]]
 modId="sneakanimation"
-version="0.1.0"
+version="0.1.1"
 displayName="SneakAnimation"
 displayURL="https://github.com/PieKing1215/SneakAnimation"
 logoFile="logo.png"

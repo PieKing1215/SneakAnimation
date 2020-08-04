@@ -26,7 +26,7 @@ repositories {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'maven-publish'
 
-version = '1.16.1-0.1.0'
+version = '1.16.1-0.1.1'
 group = 'me.pieking1215.sneakanimation'
 archivesBaseName = 'SneakAnimation'
 
