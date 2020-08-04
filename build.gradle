@@ -33,7 +33,7 @@ archivesBaseName = 'SneakAnimation'
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
-    mappings channel: 'snapshot', version: '20200514-1.15.1'
+    mappings channel: 'snapshot', version: '20191014-1.14.3'
 
     runs {
         client {
@@ -76,18 +76,18 @@ minecraft {
 
 dependencies {
 
-    minecraft 'net.minecraftforge:forge:1.15.2-31.2.31'
+    minecraft 'net.minecraftforge:forge:1.14.4-28.2.23'
 
     // Cloth Config API (Forge)
     // www.curseforge.com/minecraft/mc-mods/cloth-config-forge
-    runtimeOnly fg.deobf("curse.maven:cloth-config-forge:2938583")
-    compileOnly fg.deobf("curse.maven:cloth-config-forge:2938583")
+    runtimeOnly fg.deobf("curse.maven:cloth-config-forge:2813656")
+    compileOnly fg.deobf("curse.maven:cloth-config-forge:2813656")
 
     // utility / testing
 
     // GameMenuModOption
     // www.curseforge.com/minecraft/mc-mods/gamemenumodoption
-    runtimeOnly fg.deobf("curse.maven:gamemenumodoption:2990175")
+    runtimeOnly fg.deobf("curse.maven:gamemenumodoption:2855452")
 
 }
 

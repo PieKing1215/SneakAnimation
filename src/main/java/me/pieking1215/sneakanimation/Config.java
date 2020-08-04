@@ -43,7 +43,7 @@ public class Config {
         ModLoadingContext.get().registerExtensionPoint(ExtensionPoint.CONFIGGUIFACTORY, () -> (client, parent) -> {
             ConfigBuilder builder = ConfigBuilder.create().setParentScreen(parent).setTitle("config.sneakanimation.title");
             builder.setDefaultBackgroundTexture(new ResourceLocation("minecraft:textures/block/spruce_planks.png"));
-            builder.transparentBackground();
+            //builder.transparentBackground(); //doesn't exist in 1.14
 
             ConfigEntryBuilder eb = builder.getEntryBuilder();
             ConfigCategory general = builder.getOrCreateCategory("key.sneakanimation.category.general");
