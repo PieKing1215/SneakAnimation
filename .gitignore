@@ -31,3 +31,6 @@ forge*changelog.txt
 !testServer/
 testServer/
 testServer/*
+
+logs/
+logs/*
