@@ -26,14 +26,14 @@ repositories {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'maven-publish'
 
-version = '1.16.1-0.1.1'
+version = '1.16.2-0.1.1'
 group = 'me.pieking1215.sneakanimation'
 archivesBaseName = 'SneakAnimation'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
-    mappings channel: 'snapshot', version: '20200514-1.16'
+    mappings channel: 'snapshot', version: '20200723-1.16.1'
 
     runs {
         client {
@@ -76,18 +76,18 @@ minecraft {
 
 dependencies {
 
-    minecraft 'net.minecraftforge:forge:1.16.1-32.0.106'
+    minecraft 'net.minecraftforge:forge:1.16.2-33.0.61'
 
     // Cloth Config API (Forge)
     // www.curseforge.com/minecraft/mc-mods/cloth-config-forge
-    runtimeOnly fg.deobf("curse.maven:cloth-config-forge:2990967")
-    compileOnly fg.deobf("curse.maven:cloth-config-forge:2990967")
+    runtimeOnly fg.deobf("curse.maven:cloth-config-forge:3032280")
+    compileOnly fg.deobf("curse.maven:cloth-config-forge:3032280")
 
     // utility / testing
 
     // GameMenuModOption
     // www.curseforge.com/minecraft/mc-mods/gamemenumodoption
-    runtimeOnly fg.deobf("curse.maven:gamemenumodoption:2990253")
+    runtimeOnly fg.deobf("curse.maven:gamemenumodoption:3040755")
 
 }
 

@@ -1,5 +1,6 @@
 modLoader="javafml"
-loaderVersion="[32,)"
+loaderVersion="[33,)"
+license="GPL v3.0"
 issueTrackerURL="https://github.com/PieKing1215/SneakAnimation/issues"
 [[mods]]
 modId="sneakanimation"
@@ -15,13 +16,13 @@ Lets you tweak the sneak animation.'''
 [[dependencies.sneakanimation]]
     modId="forge"
     mandatory=true
-    versionRange="[32,)"
+    versionRange="[33,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.sneakanimation]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.1]"
+    versionRange="[1.16.2]"
     ordering="NONE"
     side="BOTH"
 [[dependencies.sneakanimation]]
