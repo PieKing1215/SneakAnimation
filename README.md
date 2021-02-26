@@ -36,12 +36,6 @@ Do not download this mod from anywhere other than the SneakAnimation GitHub page
 This mod may not be reposted to any other third-party websites.<br>
 [#StopModReposts](https://stopmodreposts.org)
 
-Tested on <br>
-Forge 32.0.106 for MC 1.16.1,<br>
-Forge 31.2.31 for MC 1.15.2, <br>
-Forge 28.2.23 for MC 1.14.4,<br>
-on both singleplayer and multiplayer.
-
 Other mods shouldn't conflict unless they also change the sneak animation.
 
 The mod is licensed under the [GNU General Public License v3.0](LICENSE.md)
