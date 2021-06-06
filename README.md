@@ -5,7 +5,7 @@
 </h1>
 
 ### Minecraft Forge mod that lets you tweak the first person smooth sneaking animation
-test
+
 Adds a modifier to the camera smoothing when sneaking.<br>
 The modifier can be changed in the in-game config.<br>
 There is also an option to disable the smoothing entirely.<br>
